@@ -19,7 +19,7 @@ if __name__ == "__main__":
     timezone = args.timezone
 
     tz_info =  pytz.timezone(timezone)
-    push_time= (datetime.now() + timedelta(minutes=1)).astimezone(tz_info).strftime("%H:%M:%S")
+    push_time= (datetime.now() + timedelta(minutes=2)).astimezone(tz_info).strftime("%H:%M:%S")
 
     test_push = [FlingPush(book_id='MarkedJPSina', picture='https://storage.googleapis.com/fling-b827e.appspot.com/Books/MarkedJPSina/90a2fc7c0023de43c4377188ff67c38e377d310e_cover.jpg', text='Dive into 8 new releases, starting with Marked by JP Sina', title='👠 NEW PUSH FROM TC ', user_ids = [f'{user_external_id}'])]
     logger.info(test_push)

@@ -2,3 +2,4 @@ pydantic~=2.10.3
 requests~=2.32.3
 loguru~=0.7.3
 pytz~=2024.2
+pandas~=2.2.3

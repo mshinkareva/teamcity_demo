@@ -38,7 +38,7 @@ if __name__ == "__main__":
     parser.add_argument("--timezone", type=str, help="timezone", required=True)
     args = parser.parse_args()
 
-    # make_push(args.timezone, args.user_external_id)
+    make_push(args.timezone, args.user_external_id)
     save_subscribers()
 
 

@@ -6,8 +6,7 @@ from loguru import logger
 
 from one_signal.connect import OneSignalAdapter
 from one_signal.models import FlingPush
-from one_signal.utils import load_csv_to_model, get_external_ids
-
+from one_signal.utils import load_csv_to_model
 
 one_signal = OneSignalAdapter("")
 
